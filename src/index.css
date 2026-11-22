@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-ivory: #F4F1EA;
+    --bg-surface: #FFFFFF;
+    --border-beige: #D9D2C6;
+    --text-charcoal: #252525;
+    --accent-taupe: #A28B70;
+  }
+
+  .dark {
+    --bg-ivory: #191816;
+    --bg-surface: #22201D;
+    --border-beige: #35312C;
+    --text-charcoal: #F4F1EA;
+    --accent-taupe: #B59F84;
+  }
+
+  html {
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .font-editorial {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

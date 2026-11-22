@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sonalmorwani-portfolio.example.com/sitemap.xml
